@@ -1,0 +1,96 @@
+[
+  {
+    "name": "contract_review_baseline",
+    "analysis_type": "Contract Review",
+    "user_query": null,
+    "expected_agents": ["Clause Analyst"],
+    "expected_route": "team",
+    "required_prompt_keywords": [
+      "uploaded document",
+      "key clauses",
+      "termination conditions",
+      "drafting weaknesses"
+    ],
+    "forbidden_prompt_keywords": [
+      "using only the local legal knowledge base"
+    ]
+  },
+  {
+    "name": "legal_research_baseline",
+    "analysis_type": "Legal Research",
+    "user_query": null,
+    "expected_agents": ["Legal Researcher"],
+    "expected_route": "team",
+    "required_prompt_keywords": [
+      "legal principles",
+      "precedents",
+      "external legal research",
+      "uploaded document"
+    ],
+    "forbidden_prompt_keywords": [
+      "local legal knowledge base only"
+    ]
+  },
+  {
+    "name": "risk_assessment_baseline",
+    "analysis_type": "Risk Assessment",
+    "user_query": null,
+    "expected_agents": ["Clause Analyst", "Risk Strategist"],
+    "expected_route": "team",
+    "required_prompt_keywords": [
+      "problematic clauses",
+      "legal and practical risks",
+      "rank the major risks",
+      "practical risk-mitigation recommendations"
+    ],
+    "forbidden_prompt_keywords": [
+      "local legal knowledge base only"
+    ]
+  },
+  {
+    "name": "compliance_check_baseline",
+    "analysis_type": "Compliance Check",
+    "user_query": null,
+    "expected_agents": ["Clause Analyst", "Legal Researcher", "Risk Strategist"],
+    "expected_route": "team",
+    "required_prompt_keywords": [
+      "compliance-related clauses",
+      "regulatory concerns",
+      "practical compliance risks",
+      "recommended next steps"
+    ],
+    "forbidden_prompt_keywords": [
+      "local legal knowledge base only"
+    ]
+  },
+  {
+    "name": "custom_query_escalation",
+    "analysis_type": "Custom Query",
+    "user_query": "Please identify payment defaults, missing liability caps, and the top negotiation issues.",
+    "expected_agents": ["Clause Analyst", "Legal Researcher", "Risk Strategist"],
+    "expected_route": "team",
+    "required_prompt_keywords": [
+      "User Request",
+      "payment defaults",
+      "missing liability caps",
+      "Primary Specialists"
+    ],
+    "forbidden_prompt_keywords": [
+      "using only the local legal knowledge base"
+    ]
+  },
+  {
+    "name": "local_query_kb_only",
+    "analysis_type": "Local Query",
+    "user_query": "What is the meaning of force majeure in general contract law?",
+    "expected_agents": ["Local Legal KB Agent"],
+    "expected_route": "local_agent",
+    "required_prompt_keywords": [
+      "force majeure"
+    ],
+    "forbidden_prompt_keywords": [
+      "uploaded document",
+      "Primary Task"
+    ]
+  }
+]

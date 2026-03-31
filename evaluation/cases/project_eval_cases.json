@@ -1,0 +1,66 @@
+[
+  {
+    "name": "contract_review_sample_contract",
+    "analysis_type": "Contract Review",
+    "user_query": null,
+    "expectations": [
+      "payment",
+      "termination",
+      "liability",
+      "ambigu",
+      "missing"
+    ],
+    "min_length": 400
+  },
+  {
+    "name": "risk_assessment_sample_contract",
+    "analysis_type": "Risk Assessment",
+    "user_query": null,
+    "expectations": [
+      "high",
+      "medium",
+      "risk",
+      "liability",
+      "recommend"
+    ],
+    "min_length": 400
+  },
+  {
+    "name": "compliance_check_sample_contract",
+    "analysis_type": "Compliance Check",
+    "user_query": null,
+    "expectations": [
+      "compliance",
+      "data",
+      "privacy",
+      "notification",
+      "recommend"
+    ],
+    "min_length": 350
+  },
+  {
+    "name": "custom_query_liability_focus",
+    "analysis_type": "Custom Query",
+    "user_query": "Identify the most important negotiation issues in this agreement, with special attention to liability cap carve-outs, data protection obligations, and invoice dispute handling.",
+    "expectations": [
+      "liability",
+      "data",
+      "invoice",
+      "negot",
+      "priority"
+    ],
+    "min_length": 350
+  },
+  {
+    "name": "local_query_force_majeure",
+    "analysis_type": "Local Query",
+    "user_query": "What is a breach of contract and what remedies are commonly available?",
+    "expectations": [
+      "breach of contract",
+      "damages",
+      "specific performance",
+      "termination"
+    ],
+    "min_length": 180
+  }
+]

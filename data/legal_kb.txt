@@ -1,0 +1,61 @@
+LEGAL PRINCIPLES OVERVIEW
+
+1. Contract Law
+
+A contract is a legally binding agreement between two or more parties. 
+For a contract to be valid, the following elements must be present:
+
+- Offer: One party proposes terms.
+- Acceptance: The other party agrees to the terms.
+- Consideration: Something of value is exchanged.
+- Intention: Both parties intend to create legal obligations.
+
+If any of these elements are missing, the contract may be considered invalid.
+
+2. Breach of Contract
+
+A breach of contract occurs when one party fails to perform their contractual obligations.
+
+Common remedies include:
+
+- Damages
+- Specific performance
+- Contract termination
+
+3. Privacy Law
+
+Privacy law regulates how personal information is collected and used.
+
+Personal data refers to information relating to an identifiable individual.
+
+Examples include:
+
+- name
+- email address
+- identification number
+- location data
+
+Organizations must ensure that personal data is processed lawfully and securely.
+
+4. Intellectual Property
+
+Intellectual property refers to creations of the mind.
+
+The main types include:
+
+- Copyright
+- Trademark
+- Patent
+- Trade secrets
+
+Patents protect inventions and typically last for a limited period, usually 20 years.
+
+5. Legal Liability
+
+Legal liability arises when a person or organization is legally responsible for harm or damages.
+
+Liability may arise in situations such as:
+
+- negligence
+- breach of duty
+- violation of statutory obligations

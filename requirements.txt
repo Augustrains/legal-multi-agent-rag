@@ -1,0 +1,12 @@
+agno>=2.2.10
+streamlit
+qdrant-client
+openai
+pypdf
+duckduckgo-search
+ddgs
+python-dotenv
+langdetect
+sentence-transformers
+transformers<5
+huggingface-hub<1.0

@@ -1,0 +1,42 @@
+SOFTWARE SERVICES AGREEMENT
+
+This Software Services Agreement is entered into between Alpha Manufacturing Co. ("Client") and Nova Systems Ltd. ("Vendor").
+
+1. Services
+Vendor will implement and maintain a workflow automation platform for Client, including integration support, quarterly reporting, and basic user training.
+
+2. Fees and Payment
+Client will pay Vendor a one-time implementation fee of USD 25,000 and a recurring service fee of USD 8,000 per month.
+Invoices are due within 15 days after receipt.
+The agreement does not describe any late-payment interest, suspension rights, or dispute procedure for challenged invoices.
+
+3. Term
+The initial term is 24 months and renews automatically for successive 12-month periods unless either party gives 60 days' written notice before renewal.
+
+4. Data Protection
+Vendor will process Client data as necessary to provide the services and will use commercially reasonable safeguards.
+The agreement does not define data retention periods, subcontractor approval requirements, cross-border transfer controls, or breach notification timelines.
+
+5. Confidentiality
+Each party must keep the other party's confidential information secret for 3 years after disclosure.
+There is no express carve-out for information independently developed or required to be disclosed by law.
+
+6. Intellectual Property
+Vendor retains ownership of its pre-existing materials and general know-how.
+The agreement is unclear on ownership of custom deliverables, training materials, and workflow templates created during the project.
+
+7. Warranties
+Vendor warrants that it will perform services in a professional manner.
+No service levels, uptime commitments, response times, or warranty remedies are stated.
+
+8. Liability
+Vendor's total liability is limited to the fees paid in the 3 months preceding the claim.
+The agreement does not address exclusions for gross negligence, willful misconduct, confidentiality breaches, or data protection violations.
+
+9. Termination
+Either party may terminate for material breach if the breach is not cured within 30 days after written notice.
+Client does not have a clear termination right for repeated service failures or prolonged security incidents.
+
+10. Governing Law
+This agreement is governed by the laws of California.
+
