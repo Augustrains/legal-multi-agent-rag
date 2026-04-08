@@ -1,0 +1,44 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+  "document_summary": "An outsourcing agreement between IBM and Manufacturers' Services Western U.S. Operations, Inc. (MSL) dated June 1, 1998, covering the sale of IBM assets, transition services, personnel transfer, manufacturing, fulfillment, integration, intellectual property, warranties, indemnification, and related operational terms, with multiple amendments through 2000.",
+  "analysis_type": "Legal Research",
+  "user_query": "Identify the main legal issues raised by the uploaded document and provide the relevant legal principles, precedents, regulatory concerns, or compliance background.\nDistinguish clearly between what is stated in the uploaded document and what comes from legal research or external authority.\nProvide stable legal background, key definitions, and jurisdiction-relevant support where helpful.\nFocus on legal interpretation and authority support rather than contract redrafting.",
+  "expected_document_retrieval_targets": [
+    "Section 15.3 LIMITATIONS OF LIABILITY",
+    "Section 16.9 GOVERNING LAW",
+    "Section 5.0 TERMINATION",
+    "Section 13.0 INTELLECTUAL PROPERTY",
+    "Section 14.0 WARRANTIES"
+  ],
+  "expected_local_kb_retrieval_targets": [
+    "Contract Law principles on validity elements",
+    "Breach of Contract remedies",
+    "Intellectual Property types and protections",
+    "Legal Liability principles"
+  ],
+  "must_cover_topics": [
+    "Enforceability of liability limitations under New York law",
+    "Validity of intellectual property assignments versus licenses",
+    "Requirements for effective termination for cause under contract law",
+    "Distinction between express and implied warranties in commercial contracts",
+    "Governing law and jurisdiction selection implications"
+  ],
+  "must_cover_issues": [
+    "Potential conflict between indemnification obligations and liability cap",
+    "Adequacy of consideration for broad IP assignments",
+    "Sufficiency of cure periods for material breach remedies",
+    "Exclusion of implied warranties versus statutory warranty requirements"
+  ],
+  "recommended_actions": [
+    "Research New York case law on enforceability of consequential damages waivers",
+    "Review federal intellectual property law on assignment formalities",
+    "Analyze UCC provisions on warranty disclaimers in commercial transactions"
+  ],
+  "expected_structure": [
+    "Identification of main legal issues from the document",
+    "Relevant legal principles from the knowledge base with clear attribution",
+    "Analysis of how legal principles apply to contract provisions",
+    "Distinction between document content and external legal authority"
+  ],
+  "evaluation_rubric": "Response must clearly separate contract provisions from legal principles, applying only the provided legal background to interpret the agreement's enforceability and implications."
+}

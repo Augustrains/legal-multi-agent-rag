@@ -1,0 +1,138 @@
+{
+  "analysis_type": "Custom Query",
+  "summary": {
+    "total_cases": 1,
+    "passed_cases": 0,
+    "pass_rate": 0.0,
+    "average_score": 0.3333,
+    "average_duration_seconds": 11.653
+  },
+  "results": [
+    {
+      "description": "Custom Query | 01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+      "analysis_type": "Custom Query",
+      "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval_case/eval_data/01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+      "user_query": "What are IBM's specific obligations regarding the transfer of intellectual property rights for products manufactured under this agreement?",
+      "duration_seconds": 11.653,
+      "document_retrieval": {
+        "expected_targets": [
+          "Section 13.1 INTELLECTUAL AND INDUSTRIAL PROPERTY",
+          "Section 13.3 LICENSES",
+          "Attachment 6 SOFTWARE INSTALLATION TERMS"
+        ],
+        "retrieved_results": [
+          {
+            "preview": "this Section 16.21 shall not constitute a breach or other violation of this Agreement. b) IBM may, at its sole discretion and at its own expense in order to remedy any such suspensions listed in a) above, procure any necessary license rights, or make use of non-infringing designs, processes, Parts, deliverables, equipment or other materials, so long as such substitute items do not result in the Products failing to comply with the specifications, requirements, and warranties set forth in this Agr",
+            "metadata": {
+              "chunk": 135,
+              "chunk_size": 602,
+              "source_type": "local_txt",
+              "file_name": "01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+              "legal_topic": "general_legal_principles",
+              "jurisdiction": "general",
+              "language": "en",
+              "content_hash": "98743f4120419d4695cbab616aaf02f55188294eaf6e5cb6af7b7a150233fb32"
+            }
+          },
+          {
+            "preview": " as may be expressly agreed upon in advance by the Parties in writing. 13.3 Licenses a) Notwithstanding anything to the contrary in this Agreement, nothing in this Agreement grants or may grant MSL any rights or licenses in any preexisting intellectual property of IBM except that IBM grants MSL a royalty-free license to use the confidential information disclosed in connection with this Agreement under the AECI referenced in 13.2 necessary to manufacture Products solely for IBM. Any other license",
+            "metadata": {
+              "chunk": 74,
+              "chunk_size": 605,
+              "source_type": "local_txt",
+              "file_name": "01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+              "legal_topic": "general_legal_principles",
+              "jurisdiction": "general",
+              "language": "en",
+              "content_hash": "15045b8de1c8bba402c9b592ec24845ddf58f35e86d2557188cce2257b7f0d6a"
+            }
+          },
+          {
+            "preview": "Images on Products and to distribute Preloaded Products as otherwise permitted in the Agreement. IBM may revoke these authorizations in whole or in part at any time in its sole discretion. ",
+            "metadata": {
+              "chunk": 576,
+              "chunk_size": 189,
+              "source_type": "local_txt",
+              "file_name": "01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+              "legal_topic": "general_legal_principles",
+              "jurisdiction": "general",
+              "language": "en",
+              "content_hash": "0741749b6a4a11de918967a3b12cf9b7d002dd536f94dafe224246a5d25d0ceb"
+            }
+          }
+        ],
+        "check": {
+          "pass": true,
+          "score": 0.6667,
+          "reason": {
+            "target_hits": [
+              "Section 13.1 INTELLECTUAL AND INDUSTRIAL PROPERTY",
+              "Section 13.3 LICENSES"
+            ],
+            "target_misses": [
+              "Attachment 6 SOFTWARE INSTALLATION TERMS"
+            ]
+          }
+        }
+      },
+      "local_kb_retrieval": {
+        "expected_targets": [
+          "Intellectual Property principles on ownership and assignment"
+        ],
+        "retrieved_results": [
+          {
+            "preview": "[Source]\nfile_name: legal_principles_overview.txt\nchunk: 2\ncontent_hash: 0ecc7d66a7951452f963002f976fbc3d67f1f605b1f00356072daa9b5cecc34b\nlegal_topic: general_legal_principles\njurisdiction: general\n\n[Content]\ntermination 3. Privacy Law Privacy law regulates how personal information is collected and used. Personal data refers to information relating to an identifiable individual. Examples include: - name - email address - identification number - location data Organizations must ensure that person",
+            "metadata": {
+              "chunk": 2,
+              "chunk_size": 763,
+              "source_type": "local_txt",
+              "file_name": "legal_principles_overview.txt",
+              "legal_topic": "general_legal_principles",
+              "jurisdiction": "general",
+              "language": "en",
+              "content_hash": "0ecc7d66a7951452f963002f976fbc3d67f1f605b1f00356072daa9b5cecc34b"
+            }
+          },
+          {
+            "preview": "[Source]\nfile_name: legal_principles_overview.txt\nchunk: 1\ncontent_hash: 426a3c700845b3552fb9859b8395d0ce439e85313afebb0b6da699dbc6b69ea7\nlegal_topic: general_legal_principles\njurisdiction: general\n\n[Content]\nLEGAL PRINCIPLES OVERVIEW 1. Contract Law A contract is a legally binding agreement between two or more parties. For a contract to be valid, the following elements must be present: - Offer: One party proposes terms. - Acceptance: The other party agrees to the terms. - Consideration: Somethi",
+            "metadata": {
+              "chunk": 1,
+              "chunk_size": 736,
+              "source_type": "local_txt",
+              "file_name": "legal_principles_overview.txt",
+              "legal_topic": "general_legal_principles",
+              "jurisdiction": "general",
+              "language": "en",
+              "content_hash": "426a3c700845b3552fb9859b8395d0ce439e85313afebb0b6da699dbc6b69ea7"
+            }
+          },
+          {
+            "preview": "[Source]\nfile_name: legal_principles_overview.txt\nchunk: 4\ncontent_hash: ed7607efee401ed7de581ba5a11fd2a8e32a4b4480e9373b56fc259b5d5e7b70\nlegal_topic: general_legal_principles\njurisdiction: general\n\n[Content]\nmay arise in situations such as: - negligence - breach of duty - violation of statutory obligations",
+            "metadata": {
+              "chunk": 4,
+              "chunk_size": 99,
+              "source_type": "local_txt",
+              "file_name": "legal_principles_overview.txt",
+              "legal_topic": "general_legal_principles",
+              "jurisdiction": "general",
+              "language": "en",
+              "content_hash": "ed7607efee401ed7de581ba5a11fd2a8e32a4b4480e9373b56fc259b5d5e7b70"
+            }
+          }
+        ],
+        "check": {
+          "pass": false,
+          "score": 0.0,
+          "reason": {
+            "target_hits": [],
+            "target_misses": [
+              "Intellectual Property principles on ownership and assignment"
+            ]
+          }
+        }
+      },
+      "final_score": 0.3333,
+      "final_pass": false
+    }
+  ]
+}

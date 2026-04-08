@@ -1,0 +1,33 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+  "knowledge_summary": "The text outlines key legal principles in contract law, breach of contract, privacy law, intellectual property, and legal liability. It provides definitions, elements, examples, and remedies for each area.",
+  "analysis_type": "Local Query",
+  "user_query": "Under what circumstances can legal liability arise?",
+  "must_cover_topics": [
+    "Legal Liability",
+    "Liability Circumstances"
+  ],
+  "must_cover_points": [
+    "negligence",
+    "breach of duty",
+    "violation of statutory obligations"
+  ],
+  "expected_evidence_terms": [
+    "legal liability arises",
+    "situations such as",
+    "negligence",
+    "breach of duty",
+    "statutory obligations"
+  ],
+  "recommended_followups": [
+    "Is intent always required for legal liability?",
+    "Can organizations also face legal liability?"
+  ],
+  "expected_structure": [
+    "Answer",
+    "Evidence from KB",
+    "Caveats",
+    "Follow-up questions"
+  ],
+  "evaluation_rubric": "Identifies all three situations where legal liability may arise based on the text."
+}

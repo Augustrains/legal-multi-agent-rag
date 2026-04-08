@@ -1,0 +1,35 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+  "knowledge_summary": "The text outlines key legal principles in contract law, breach of contract, privacy law, intellectual property, and legal liability. It provides definitions, elements, examples, and remedies for each area.",
+  "analysis_type": "Local Query",
+  "user_query": "What is the difference between a breach of contract and legal liability?",
+  "must_cover_topics": [
+    "Breach of Contract",
+    "Legal Liability",
+    "Comparison"
+  ],
+  "must_cover_points": [
+    "breach involves failure to perform contractual duties",
+    "liability involves responsibility for harm or damages",
+    "both may overlap in cases of contractual violation causing harm"
+  ],
+  "expected_evidence_terms": [
+    "breach of contract",
+    "failure to perform",
+    "legal liability",
+    "responsible for harm",
+    "duty",
+    "obligations"
+  ],
+  "recommended_followups": [
+    "Can someone be liable even without a contract?",
+    "Are there exceptions to liability arising from breach of contract?"
+  ],
+  "expected_structure": [
+    "Answer",
+    "Evidence from KB",
+    "Caveats",
+    "Follow-up questions"
+  ],
+  "evaluation_rubric": "Accurately contrasts breach of contract and legal liability using the provided text."
+}

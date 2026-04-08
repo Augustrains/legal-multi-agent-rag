@@ -6,9 +6,16 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-PROJECT_DIR = Path(__file__).resolve().parent
-DEFAULT_CASES_PATH = PROJECT_DIR / "eval_cases.json"
-DEFAULT_OUTPUT_PATH = PROJECT_DIR / "eval_report.json"
+PROJECT_DIR = Path(__file__).resolve().parents[2]
+OFFLINE_DIR = Path(__file__).resolve().parent
+SRC_DIR = PROJECT_DIR / "src"
+if str(PROJECT_DIR) not in sys.path:
+    sys.path.insert(0, str(PROJECT_DIR))
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
+
+DEFAULT_CASES_PATH = OFFLINE_DIR / "eval_cases.json"
+DEFAULT_OUTPUT_PATH = OFFLINE_DIR / "eval_report.json"
 
 
 @dataclass
@@ -56,7 +63,7 @@ def install_agno_stubs() -> None:
 
 def load_agent_service_class():
     try:
-        from agent_service import AgentService  # type: ignore
+        from src.agent_service import AgentService  # type: ignore
 
         return AgentService
     except ModuleNotFoundError as exc:
@@ -64,7 +71,7 @@ def load_agent_service_class():
             raise
 
     install_agno_stubs()
-    from agent_service import AgentService  # type: ignore
+    from src.agent_service import AgentService  # type: ignore
 
     return AgentService
 

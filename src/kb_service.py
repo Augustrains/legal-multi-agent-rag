@@ -1,6 +1,7 @@
 import os
 import hashlib
 import tempfile
+import json
 from typing import List, Callable, Optional
 
 from agno.agent import Agent
@@ -22,7 +23,7 @@ from qdrant_client.http.models import (
     MatchValue,
 )
 
-from logging_config import get_logger
+from .logging_config import get_logger
 
 logger = get_logger("legal_app")
 
@@ -176,6 +177,64 @@ def init_qdrant_with_index(
 
     except Exception:
         logger.exception("[LocalKB] Failed to initialize local collection")
+        raise
+
+
+def collection_exists(
+    qdrant_url: str,
+    qdrant_api_key: str,
+    collection_name: str,
+) -> bool:
+    client = QdrantClient(
+        url=qdrant_url,
+        api_key=qdrant_api_key,
+        timeout=10,
+    )
+    collections = [c.name for c in client.get_collections().collections]
+    return collection_name in collections
+
+
+def load_knowledge_from_collection(
+    qdrant_url: str,
+    qdrant_api_key: str,
+    collection_name: str,
+) -> Knowledge:
+    embedder = SentenceTransformerEmbedder(
+        id="sentence-transformers/all-MiniLM-L6-v2"
+    )
+    vector_db = Qdrant(
+        collection=collection_name,
+        url=qdrant_url,
+        api_key=qdrant_api_key,
+        embedder=embedder,
+    )
+    return Knowledge(vector_db=vector_db)
+
+
+def clear_collection_points(
+    qdrant_url: str,
+    qdrant_api_key: str,
+    collection_name: str = DEFAULT_MAIN_COLLECTION,
+) -> None:
+    """
+    清空指定 collection 中的全部 points，但保留 collection 本身及其配置
+    """
+    try:
+        client = QdrantClient(
+            url=qdrant_url,
+            api_key=qdrant_api_key,
+            timeout=10,
+        )
+        client.delete(
+            collection_name=collection_name,
+            points_selector=Filter(must=[]),
+            wait=True,
+        )
+        logger.info(f"[Qdrant] Cleared all points from collection={collection_name}")
+    except Exception:
+        logger.exception(
+            f"[Qdrant] Failed to clear points from collection={collection_name}"
+        )
         raise
 
 
@@ -592,3 +651,40 @@ def base_local_kb_retriever(agent, query: str, num_documents: int = 3, **kwargs)
 
     logger.info(f"[BaseRetriever] Finished returned_docs={len(results)}")
     return results
+
+
+def create_local_kb_search_tool(
+    local_knowledge_base: Optional[Knowledge],
+    local_retriever: Optional[Callable],
+) -> Callable:
+    """
+    返回一个可直接挂到 Agent tools 上的本地 KB 检索工具。
+    该工具显式使用 local_knowledge_base，而不是依赖 agent.knowledge。
+    """
+
+    class _LocalKBAgentShim:
+        def __init__(self, knowledge: Knowledge):
+            self.knowledge = knowledge
+
+    def search_local_legal_kb(query: str, max_results: int = 3) -> str:
+        """Search the local legal knowledge base for legal background and support."""
+        if local_knowledge_base is None or local_retriever is None:
+            return json.dumps(
+                {
+                    "status": "unavailable",
+                    "message": "Local legal knowledge base is not available.",
+                    "results": [],
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+
+        shim_agent = _LocalKBAgentShim(local_knowledge_base)
+        results = local_retriever(
+            shim_agent,
+            query=query,
+            num_documents=max_results,
+        )
+        return json.dumps(results, ensure_ascii=False, indent=2)
+
+    return search_local_legal_kb

@@ -1,0 +1,28 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+  "knowledge_summary": "The text outlines key legal principles in contract law, breach of contract, privacy law, intellectual property, and legal liability. It provides definitions, elements, examples, and remedies for each area.",
+  "analysis_type": "Local Query",
+  "user_query": "What is the definition of 'privacy law' according to the text?",
+  "must_cover_topics": [
+    "Privacy Law",
+    "Definition"
+  ],
+  "must_cover_points": [
+    "regulates how personal information is collected and used"
+  ],
+  "expected_evidence_terms": [
+    "privacy law",
+    "regulates how personal information is collected and used"
+  ],
+  "recommended_followups": [
+    "What are the penalties for violating privacy law?",
+    "Who enforces privacy law?"
+  ],
+  "expected_structure": [
+    "Answer",
+    "Evidence from KB",
+    "Caveats",
+    "Follow-up questions"
+  ],
+  "evaluation_rubric": "Provides a clear and accurate definition from the given text."
+}

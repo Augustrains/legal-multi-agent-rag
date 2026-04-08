@@ -1,0 +1,35 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+  "knowledge_summary": "The text outlines key legal principles in contract law, breach of contract, privacy law, intellectual property, and legal liability. It provides definitions, elements, examples, and remedies for each area.",
+  "analysis_type": "Local Query",
+  "user_query": "What is considered personal data under privacy law?",
+  "must_cover_topics": [
+    "Privacy Law",
+    "Personal Data"
+  ],
+  "must_cover_points": [
+    "name",
+    "email address",
+    "identification number",
+    "location data"
+  ],
+  "expected_evidence_terms": [
+    "personal information",
+    "examples include",
+    "name",
+    "email address",
+    "identification number",
+    "location data"
+  ],
+  "recommended_followups": [
+    "What are the requirements for lawful processing of personal data?",
+    "Is a phone number considered personal data?"
+  ],
+  "expected_structure": [
+    "Answer",
+    "Evidence from KB",
+    "Caveats",
+    "Follow-up questions"
+  ],
+  "evaluation_rubric": "Provides accurate examples of personal data as defined in the text."
+}

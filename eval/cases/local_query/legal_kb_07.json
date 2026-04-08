@@ -1,0 +1,29 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+  "knowledge_summary": "The text outlines key legal principles in contract law, breach of contract, privacy law, intellectual property, and legal liability. It provides definitions, elements, examples, and remedies for each area.",
+  "analysis_type": "Local Query",
+  "user_query": "What is the typical duration of a patent under intellectual property law?",
+  "must_cover_topics": [
+    "Intellectual Property",
+    "Patents"
+  ],
+  "must_cover_points": [
+    "20 years"
+  ],
+  "expected_evidence_terms": [
+    "patents protect inventions",
+    "typically last for a limited period",
+    "usually 20 years"
+  ],
+  "recommended_followups": [
+    "Does the patent duration apply globally?",
+    "What happens after a patent expires?"
+  ],
+  "expected_structure": [
+    "Answer",
+    "Evidence from KB",
+    "Caveats",
+    "Follow-up questions"
+  ],
+  "evaluation_rubric": "Correctly states the duration of a patent as described in the text."
+}

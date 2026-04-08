@@ -1,0 +1,44 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+  "document_summary": "An outsourcing agreement between IBM and Manufacturers' Services Western U.S. Operations, Inc. (MSL) dated June 1, 1998, covering the sale of IBM assets, transition services, personnel transfer, manufacturing, fulfillment, integration, intellectual property, warranties, indemnification, and related operational terms, with multiple amendments through 2000.",
+  "analysis_type": "Risk Assessment",
+  "user_query": "First identify the document-level issues, problematic clauses, missing protections, or ambiguous drafting in the uploaded document.\nThen assess the legal and practical risks associated with those issues.\nUse relevant legal background where helpful to support the analysis of identified risks and mitigation considerations.\nRank the major risks by priority and explain why they matter.\nFinally, provide practical risk-mitigation recommendations.",
+  "expected_document_retrieval_targets": [
+    "Section 5.1 BREACH",
+    "Section 15.3 LIMITATIONS OF LIABILITY",
+    "Section 13.1 INTELLECTUAL PROPERTY ASSIGNMENT",
+    "Section 8.0 PURCHASE OF ASSETS",
+    "Section 16.17 FORCE MAJEURE",
+    "Amendment 010 Section 2.0 TERM extension"
+  ],
+  "expected_local_kb_retrieval_targets": [
+    "Contract Law principles on enforceability",
+    "Legal Liability principles on damage limitations"
+  ],
+  "must_cover_topics": [
+    "Uncapped liability exposure for MSL under indemnification despite overall liability cap",
+    "Ambiguous cure periods for breach notices due to redactions",
+    "Extended transition service obligations through March 2000 creating operational dependency",
+    "'As is' asset transfer without warranties beyond title",
+    "Broad intellectual property assignment potentially affecting MSL's independent innovations"
+  ],
+  "must_cover_issues": [
+    "Redacted cure periods may render termination rights unenforceable due to indefiniteness",
+    "Liability cap may not apply to indemnification obligations creating disproportionate risk",
+    "Force majeure thresholds undefined, creating uncertainty in excusable delay determinations",
+    "Asset purchase 'as is' terms expose MSL to undisclosed defects without recourse"
+  ],
+  "recommended_actions": [
+    "Negotiate defined cure periods replacing redacted timeframes",
+    "Clarify that liability cap applies to all obligations including indemnification",
+    "Specify exact force majeure duration thresholds triggering termination rights",
+    "Conduct independent asset condition audit before closing"
+  ],
+  "expected_structure": [
+    "Identification of document-level issues and ambiguous provisions",
+    "Legal and practical risk assessment with prioritization",
+    "Application of relevant legal principles to identified risks",
+    "Practical risk-mitigation recommendations"
+  ],
+  "evaluation_rubric": "Analysis must connect specific contract ambiguities to concrete legal and operational risks using only the provided legal principles, with mitigation recommendations grounded exclusively in contract text."
+}

@@ -1,0 +1,35 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+  "document_summary": "An outsourcing agreement between IBM and Manufacturers' Services Western U.S. Operations, Inc. (MSL) dated June 1, 1998, covering the sale of IBM assets, transition services, personnel transfer, manufacturing, fulfillment, integration, intellectual property, warranties, indemnification, and related operational terms, with multiple amendments through 2000.",
+  "analysis_type": "Custom Query",
+  "user_query": "What are IBM's specific obligations regarding the transfer of intellectual property rights for products manufactured under this agreement?",
+  "expected_document_retrieval_targets": [
+    "Section 13.1 INTELLECTUAL AND INDUSTRIAL PROPERTY",
+    "Section 13.3 LICENSES",
+    "Attachment 6 SOFTWARE INSTALLATION TERMS"
+  ],
+  "expected_local_kb_retrieval_targets": [
+    "Intellectual Property principles on ownership and assignment"
+  ],
+  "must_cover_topics": [
+    "IBM assumes ownership of all intellectual property for hardware, software, design and documentation of delivered products",
+    "MSL assigns all inventions made on products and related to IBM processes during performance",
+    "IBM grants MSL only a royalty-free license to use confidential information necessary for manufacturing",
+    "No license granted for preexisting IBM intellectual property beyond manufacturing purposes"
+  ],
+  "must_cover_issues": [
+    "Broad assignment clause may capture MSL background IP if commingled with product development",
+    "License scope limited strictly to manufacturing for IBM, restricting MSL's independent use"
+  ],
+  "recommended_actions": [
+    "Document clear separation between MSL background IP and product-specific innovations",
+    "Obtain written confirmation of license scope for any borderline intellectual property"
+  ],
+  "expected_structure": [
+    "Direct answer to the specific query about IBM's IP obligations",
+    "Supporting evidence from contract sections",
+    "Analysis of potential issues with current IP provisions",
+    "Recommended actions for clarification or protection"
+  ],
+  "evaluation_rubric": "Answer must precisely address IBM's IP transfer obligations as stated in Section 13.1, distinguishing between ownership assumptions and assignment requirements without extrapolation."
+}

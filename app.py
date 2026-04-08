@@ -8,15 +8,16 @@ from dotenv import load_dotenv
 from agno.models.deepseek import DeepSeek
 from agno.run.agent import RunOutput
 
-from logging_config import setup_logging, get_logger
-from kb_service import (
+from src.logging_config import setup_logging, get_logger
+from src.kb_service import (
     init_qdrant_main,
     process_uploaded_file,
     build_local_kb,
     create_local_kb_retriever,
+    clear_collection_points,
     compute_uploaded_file_hash,
 )
-from agent_service import AgentService
+from src.agent_service import AgentService
 
 
 # =========================================================
@@ -158,13 +159,18 @@ def process_uploaded_document(uploaded_file, llm):
             f"[App] Processing uploaded document "
             f"file_name={uploaded_file.name} file_hash={file_hash[:12]}"
         )
+        clear_collection_points(
+            qdrant_url=st.session_state.qdrant_url,
+            qdrant_api_key=st.session_state.qdrant_api_key,
+        )
+
         knowledge_base = process_uploaded_file(
             uploaded_file=uploaded_file,
             vector_db=st.session_state.vector_db,
         )
 
         st.session_state.knowledge_base = knowledge_base
-        st.session_state.processed_files.add(file_hash)
+        st.session_state.processed_files = {file_hash}
         st.session_state.last_uploaded_file_hash = file_hash
 
         refresh_agent_service(llm)
@@ -204,7 +210,14 @@ Please summarize the key points in bullet points.
         if analysis_type != "Local Query":
             key_points_prompt += f"Focus on insights from: {', '.join(active_agents)}"
 
-        key_points_response = service.run("Local Query", key_points_prompt) if analysis_type == "Local Query" else service.run("Custom Query", key_points_prompt)
+        postprocess_analysis_type = (
+            "Local Query" if analysis_type == "Local Query" else "Custom Query"
+        )
+        key_points_response = run_analysis_request(
+            service,
+            postprocess_analysis_type,
+            key_points_prompt,
+        )
 
         st.markdown(key_points_response.content or "")
         logger.info(
@@ -223,7 +236,14 @@ What are your key recommendations based on the analysis, the best course of acti
         if analysis_type != "Local Query":
             rec_prompt += f"\nProvide specific recommendations from: {', '.join(active_agents)}"
 
-        recommendations_response = service.run("Local Query", rec_prompt) if analysis_type == "Local Query" else service.run("Custom Query", rec_prompt)
+        postprocess_analysis_type = (
+            "Local Query" if analysis_type == "Local Query" else "Custom Query"
+        )
+        recommendations_response = run_analysis_request(
+            service,
+            postprocess_analysis_type,
+            rec_prompt,
+        )
 
         st.markdown(recommendations_response.content or "")
         logger.info(
@@ -236,6 +256,25 @@ What are your key recommendations based on the analysis, the best course of acti
 # =========================================================
 # Main
 # =========================================================
+def _execution_mode() -> str:
+    mode = os.getenv("LEGAL_APP_EXECUTION_MODE", "").strip().lower()
+    if not mode:
+        mode = os.getenv("PROMPTFOO_EXECUTION_MODE", "team").strip().lower()
+    if mode not in {"team", "single"}:
+        raise ValueError("Execution mode must be either 'team' or 'single'")
+    return mode
+
+
+def run_analysis_request(
+    service: AgentService,
+    analysis_type: str,
+    user_query: str | None = None,
+) -> RunOutput:
+    if _execution_mode() == "single":
+        return service.run_single_agent(analysis_type, user_query)
+    return service.run(analysis_type, user_query)
+
+
 def main():
     logger.info("[App] main() started")
 
@@ -381,7 +420,7 @@ def main():
             os.environ["DEEPSEEK_API_KEY"] = st.session_state.deepseek_api_key
 
             with st.spinner("Analyzing document..."):
-                response: RunOutput = service.run(analysis_type, user_query)
+                response = run_analysis_request(service, analysis_type, user_query)
 
             logger.info(
                 f"[AnalyzeDone] analysis_type={analysis_type} "

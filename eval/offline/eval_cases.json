@@ -19,11 +19,12 @@
     "name": "legal_research_baseline",
     "analysis_type": "Legal Research",
     "user_query": null,
-    "expected_agents": ["Legal Researcher"],
+    "expected_agents": ["Legal Researcher", "Local Legal KB Specialist"],
     "expected_route": "team",
     "required_prompt_keywords": [
       "legal principles",
       "precedents",
+      "stable legal background",
       "external legal research",
       "uploaded document"
     ],
@@ -35,11 +36,12 @@
     "name": "risk_assessment_baseline",
     "analysis_type": "Risk Assessment",
     "user_query": null,
-    "expected_agents": ["Clause Analyst", "Risk Strategist"],
+    "expected_agents": ["Clause Analyst", "Local Legal KB Specialist", "Risk Strategist"],
     "expected_route": "team",
     "required_prompt_keywords": [
       "problematic clauses",
       "legal and practical risks",
+      "local legal knowledge-base support",
       "rank the major risks",
       "practical risk-mitigation recommendations"
     ],
@@ -51,10 +53,11 @@
     "name": "compliance_check_baseline",
     "analysis_type": "Compliance Check",
     "user_query": null,
-    "expected_agents": ["Clause Analyst", "Legal Researcher", "Risk Strategist"],
+    "expected_agents": ["Clause Analyst", "Legal Researcher", "Local Legal KB Specialist", "Risk Strategist"],
     "expected_route": "team",
     "required_prompt_keywords": [
       "compliance-related clauses",
+      "compliance framework",
       "regulatory concerns",
       "practical compliance risks",
       "recommended next steps"
@@ -67,10 +70,11 @@
     "name": "custom_query_escalation",
     "analysis_type": "Custom Query",
     "user_query": "Please identify payment defaults, missing liability caps, and the top negotiation issues.",
-    "expected_agents": ["Clause Analyst", "Legal Researcher", "Risk Strategist"],
+    "expected_agents": ["Clause Analyst", "Legal Researcher", "Local Legal KB Specialist", "Risk Strategist"],
     "expected_route": "team",
     "required_prompt_keywords": [
       "User Request",
+      "local legal knowledge-base support",
       "payment defaults",
       "missing liability caps",
       "Primary Specialists"

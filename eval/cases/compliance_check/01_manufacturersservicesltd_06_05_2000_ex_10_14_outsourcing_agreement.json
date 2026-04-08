@@ -1,0 +1,42 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+  "document_summary": "An outsourcing agreement between IBM and Manufacturers' Services Western U.S. Operations, Inc. (MSL) dated June 1, 1998, covering the sale of IBM assets, transition services, personnel transfer, manufacturing, fulfillment, integration, intellectual property, warranties, indemnification, and related operational terms, with multiple amendments through 2000.",
+  "analysis_type": "Compliance Check",
+  "user_query": "Review the uploaded document for compliance-related clauses, omissions, and regulatory risk points.\nIdentify the relevant legal or regulatory concerns raised by the document.\nClarify the applicable compliance framework, regulatory background, and jurisdiction-relevant obligations where helpful.\nThen explain the practical compliance risks and recommend remediation or follow-up actions.\nSeparate document findings, legal/compliance analysis, and recommended next steps.",
+  "expected_document_retrieval_targets": [
+    "Section 16.4 COMPLIANCE WITH LAW",
+    "Section 15.1(b) REGULATORY INDEMNITY",
+    "Section 13.3 LICENSE TRANSFER OBLIGATIONS",
+    "Section 17.2(b) ISO CERTIFICATION REQUIREMENTS",
+    "Attachment 6 SOFTWARE INSTALLATION TERMS"
+  ],
+  "expected_local_kb_retrieval_targets": [
+    "Legal Liability principles on statutory obligations"
+  ],
+  "must_cover_topics": [
+    "General compliance obligation with U.S. laws including environmental and labor regulations",
+    "MSL indemnity for failure to comply with governmental laws and regulations",
+    "Requirement for MSL to obtain its own regulatory licenses for acquired assets",
+    "Mandatory ISO 9001/9002 registration and ISO 14001 certification by December 1998",
+    "Microsoft software licensing compliance requirements in Attachment 6"
+  ],
+  "must_cover_issues": [
+    "No specific identification of which environmental permits are required for asset operation",
+    "ISO 14001 certification deadline may be missed if implementation is delayed",
+    "Microsoft licensing obligations create third-party compliance dependencies",
+    "Regulatory indemnity creates uncapped liability for MSL's non-compliance"
+  ],
+  "recommended_actions": [
+    "Conduct regulatory gap analysis for environmental permits in California and New York",
+    "Verify ISO 14001 certification timeline feasibility and implement contingency plan",
+    "Establish Microsoft compliance monitoring protocol per Attachment 6 requirements",
+    "Document regulatory compliance procedures to support indemnity defense"
+  ],
+  "expected_structure": [
+    "Document findings of compliance-related clauses and omissions",
+    "Legal/compliance analysis identifying regulatory frameworks and obligations",
+    "Practical compliance risks assessment",
+    "Recommended remediation and follow-up actions"
+  ],
+  "evaluation_rubric": "Response must identify only those compliance obligations explicitly stated in the contract, connecting them to relevant regulatory frameworks without inventing unstated requirements."
+}

@@ -1,0 +1,74 @@
+{
+  "analysis_type": "Local Query",
+  "summary": {
+    "total_cases": 1,
+    "passed_cases": 1,
+    "pass_rate": 1.0,
+    "average_score": 1.0,
+    "average_duration_seconds": 5.789
+  },
+  "results": [
+    {
+      "description": "Local Query | legal_kb.txt",
+      "analysis_type": "Local Query",
+      "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+      "user_query": "What are the four essential elements required to form a valid contract?",
+      "duration_seconds": 5.789,
+      "document_retrieval": {
+        "expected_targets": [],
+        "retrieved_results": [],
+        "check": {
+          "pass": true,
+          "score": 1.0,
+          "reason": {
+            "target_hits": [],
+            "target_misses": [],
+            "note": "No expected targets were provided for this retrieval source."
+          }
+        }
+      },
+      "local_kb_retrieval": {
+        "expected_targets": [],
+        "retrieved_results": [
+          {
+            "preview": "[Source]\nfile_name: legal_principles_overview.txt\nchunk: 1\ncontent_hash: 426a3c700845b3552fb9859b8395d0ce439e85313afebb0b6da699dbc6b69ea7\nlegal_topic: general_legal_principles\njurisdiction: general\n\n[Content]\nLEGAL PRINCIPLES OVERVIEW 1. Contract Law A contract is a legally binding agreement between two or more parties. For a contract to be valid, the following elements must be present: - Offer: One party proposes terms. - Acceptance: The other party agrees to the terms. - Consideration: Somethi",
+            "metadata": {
+              "chunk": 1,
+              "chunk_size": 736,
+              "source_type": "local_txt",
+              "file_name": "legal_principles_overview.txt",
+              "legal_topic": "general_legal_principles",
+              "jurisdiction": "general",
+              "language": "en",
+              "content_hash": "426a3c700845b3552fb9859b8395d0ce439e85313afebb0b6da699dbc6b69ea7"
+            }
+          },
+          {
+            "preview": "[Source]\nfile_name: legal_principles_overview.txt\nchunk: 2\ncontent_hash: 0ecc7d66a7951452f963002f976fbc3d67f1f605b1f00356072daa9b5cecc34b\nlegal_topic: general_legal_principles\njurisdiction: general\n\n[Content]\ntermination 3. Privacy Law Privacy law regulates how personal information is collected and used. Personal data refers to information relating to an identifiable individual. Examples include: - name - email address - identification number - location data Organizations must ensure that person",
+            "metadata": {
+              "chunk": 2,
+              "chunk_size": 763,
+              "source_type": "local_txt",
+              "file_name": "legal_principles_overview.txt",
+              "legal_topic": "general_legal_principles",
+              "jurisdiction": "general",
+              "language": "en",
+              "content_hash": "0ecc7d66a7951452f963002f976fbc3d67f1f605b1f00356072daa9b5cecc34b"
+            }
+          }
+        ],
+        "check": {
+          "pass": true,
+          "score": 1.0,
+          "reason": {
+            "target_hits": [],
+            "target_misses": [],
+            "note": "No expected targets were provided for this retrieval source."
+          }
+        }
+      },
+      "final_score": 1.0,
+      "final_pass": true
+    }
+  ]
+}

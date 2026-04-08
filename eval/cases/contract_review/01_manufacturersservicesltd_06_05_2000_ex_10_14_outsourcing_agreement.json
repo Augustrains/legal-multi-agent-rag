@@ -1,0 +1,50 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+  "document_summary": "An outsourcing agreement between IBM and Manufacturers' Services Western U.S. Operations, Inc. (MSL) dated June 1, 1998, covering the sale of IBM assets, transition services, personnel transfer, manufacturing, fulfillment, integration, intellectual property, warranties, indemnification, and related operational terms, with multiple amendments through 2000.",
+  "analysis_type": "Contract Review",
+  "user_query": "Review the uploaded contract from a document-analysis perspective.\nExtract the key clauses, obligations, rights, deadlines, payment terms, termination conditions, liabilities, and dispute-related provisions.\nIdentify ambiguities, missing protections, inconsistent wording, and drafting weaknesses.\nFocus on what the document explicitly says and what it fails to address.",
+  "expected_document_retrieval_targets": [
+    "Section 4.0 TERM",
+    "Section 5.0 TERMINATION",
+    "Section 6.0 PAYMENT",
+    "Section 13.0 INTELLECTUAL AND INDUSTRIAL PROPERTY",
+    "Section 14.0 WARRANTIES",
+    "Section 15.0 INDEMNIFICATION AND LIMITATION OF LIABILITY",
+    "Section 16.9 GOVERNING LAW",
+    "Attachment 1: Statement of Work",
+    "Amendments 001-010"
+  ],
+  "expected_local_kb_retrieval_targets": [],
+  "must_cover_topics": [
+    "Three-year initial term with automatic 12-month renewals unless six months’ notice given",
+    "Termination for material breach, insolvency, or change of control",
+    "Payment terms including invoicing procedures and offset rights",
+    "Intellectual property assignment to IBM and limited license grants",
+    "Warranties regarding title, organization, and non-contravention",
+    "Indemnification for infringement, regulatory non-compliance, and warranty failures",
+    "Liability cap at 3% of bill-of-materials value and exclusion of consequential damages",
+    "Governing law: New York; waiver of jury trial",
+    "Asset purchase obligations and 'as is' disclaimers",
+    "Personnel transfer commitments and no-solicitation clause"
+  ],
+  "must_cover_issues": [
+    "Redacted timeframes in termination cure periods (e.g., '[*] Days')",
+    "Ambiguity in force majeure duration thresholds ('[*] Days')",
+    "Inconsistent references to attachment numbering across amendments",
+    "Missing specification of exact liability cap calculation methodology",
+    "Undefined scope of 'substantially adverse effect' in warranty context"
+  ],
+  "recommended_actions": [
+    "Clarify redacted cure periods and force majeure thresholds",
+    "Reconcile attachment numbering inconsistencies introduced by amendments",
+    "Define precise methodology for calculating liability cap",
+    "Specify parameters for 'substantially adverse effect' determination"
+  ],
+  "expected_structure": [
+    "Summary of key contractual elements",
+    "Detailed extraction of obligations, rights, and deadlines",
+    "Identification of ambiguities and drafting weaknesses",
+    "Gap analysis of missing protections"
+  ],
+  "evaluation_rubric": "Response must extract all explicitly stated key terms without external assumptions and identify only those ambiguities directly evident from redactions or internal inconsistencies."
+}

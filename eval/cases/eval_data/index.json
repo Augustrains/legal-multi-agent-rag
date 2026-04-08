@@ -1,0 +1,82 @@
+[
+  {
+    "rank": 1,
+    "title": "MANUFACTURERSSERVICESLTD_06_05_2000-EX-10.14-OUTSOURCING AGREEMENT",
+    "file_name": "01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/01_manufacturersservicesltd_06_05_2000_ex_10_14_outsourcing_agreement.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 2,
+    "title": "CERES,INC_01_25_2012-EX-10.20-Collaboration Agreement",
+    "file_name": "02_ceres_inc_01_25_2012_ex_10_20_collaboration_agreement.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/02_ceres_inc_01_25_2012_ex_10_20_collaboration_agreement.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 3,
+    "title": "PhasebioPharmaceuticalsInc_20200330_10-K_EX-10.21_12086810_EX-10.21_Development Agreement",
+    "file_name": "03_phasebiopharmaceuticalsinc_20200330_10_k_ex_10_21_12086810_ex_10_21_development_agreement.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/03_phasebiopharmaceuticalsinc_20200330_10_k_ex_10_21_12086810_ex_10_21_development_agreement.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 4,
+    "title": "VerizonAbsLlc_20200123_8-K_EX-10.4_11952335_EX-10.4_Service Agreement",
+    "file_name": "04_verizonabsllc_20200123_8_k_ex_10_4_11952335_ex_10_4_service_agreement.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/04_verizonabsllc_20200123_8_k_ex_10_4_11952335_ex_10_4_service_agreement.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 5,
+    "title": "CHANGEPOINTCORP_03_08_2000-EX-10.6-LICENSE AND HOSTING AGREEMENT",
+    "file_name": "05_changepointcorp_03_08_2000_ex_10_6_license_and_hosting_agreement.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/05_changepointcorp_03_08_2000_ex_10_6_license_and_hosting_agreement.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 6,
+    "title": "HEALTHGATEDATACORP_11_24_1999-EX-10.1-HOSTING AND MANAGEMENT AGREEMENT (1)",
+    "file_name": "06_healthgatedatacorp_11_24_1999_ex_10_1_hosting_and_management_agreement_1.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/06_healthgatedatacorp_11_24_1999_ex_10_1_hosting_and_management_agreement_1.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 7,
+    "title": "ZogenixInc_20190509_10-Q_EX-10.2_11663313_EX-10.2_Distributor Agreement",
+    "file_name": "07_zogenixinc_20190509_10_q_ex_10_2_11663313_ex_10_2_distributor_agreement.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/07_zogenixinc_20190509_10_q_ex_10_2_11663313_ex_10_2_distributor_agreement.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 8,
+    "title": "KINGPHARMACEUTICALSINC_08_09_2006-EX-10.1-PROMOTION AGREEMENT",
+    "file_name": "08_kingpharmaceuticalsinc_08_09_2006_ex_10_1_promotion_agreement.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/08_kingpharmaceuticalsinc_08_09_2006_ex_10_1_promotion_agreement.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 9,
+    "title": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+    "file_name": "09_ftenetworks_inc_02_18_2016_ex_99_4_strategic_alliance_agreement.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/09_ftenetworks_inc_02_18_2016_ex_99_4_strategic_alliance_agreement.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  },
+  {
+    "rank": 10,
+    "title": "PfHospitalityGroupInc_20150923_10-12G_EX-10.1_9266710_EX-10.1_Franchise Agreement1",
+    "file_name": "10_pfhospitalitygroupinc_20150923_10_12g_ex_10_1_9266710_ex_10_1_franchise_agreement1.txt",
+    "path": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/eval/cases/eval_data/10_pfhospitalitygroupinc_20150923_10_12g_ex_10_1_9266710_ex_10_1_franchise_agreement1.txt",
+    "source_dataset": "theatticusproject/cuad-qa",
+    "selection_reason": "Rich contract text with strong support for contract review, risk assessment, compliance check, custom query, and legal research tasks."
+  }
+]

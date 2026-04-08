@@ -1,0 +1,28 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+  "knowledge_summary": "The text outlines key legal principles in contract law, breach of contract, privacy law, intellectual property, and legal liability. It provides definitions, elements, examples, and remedies for each area.",
+  "analysis_type": "Local Query",
+  "user_query": "What are the basic requirements for an organization to process personal data lawfully?",
+  "must_cover_topics": [
+    "Privacy Law",
+    "Data Processing"
+  ],
+  "must_cover_points": [
+    "processed lawfully and securely"
+  ],
+  "expected_evidence_terms": [
+    "organizations must ensure",
+    "processed lawfully and securely"
+  ],
+  "recommended_followups": [
+    "What does 'lawful processing' mean in practice?",
+    "What security measures are required for personal data?"
+  ],
+  "expected_structure": [
+    "Answer",
+    "Evidence from KB",
+    "Caveats",
+    "Follow-up questions"
+  ],
+  "evaluation_rubric": "Answers based directly on the text's description of lawful and secure processing."
+}

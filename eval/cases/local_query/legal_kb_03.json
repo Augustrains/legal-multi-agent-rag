@@ -1,0 +1,33 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+  "knowledge_summary": "The text outlines key legal principles in contract law, breach of contract, privacy law, intellectual property, and legal liability. It provides definitions, elements, examples, and remedies for each area.",
+  "analysis_type": "Local Query",
+  "user_query": "What are the common remedies available when a party breaches a contract?",
+  "must_cover_topics": [
+    "Breach of Contract",
+    "Remedies"
+  ],
+  "must_cover_points": [
+    "Damages",
+    "Specific performance",
+    "Contract termination"
+  ],
+  "expected_evidence_terms": [
+    "breach of contract",
+    "common remedies include",
+    "damages",
+    "specific performance",
+    "contract termination"
+  ],
+  "recommended_followups": [
+    "When is specific performance more appropriate than damages?",
+    "Can a breached contract still be terminated?"
+  ],
+  "expected_structure": [
+    "Answer",
+    "Evidence from KB",
+    "Caveats",
+    "Follow-up questions"
+  ],
+  "evaluation_rubric": "Lists all three remedies accurately supported by the knowledge text."
+}

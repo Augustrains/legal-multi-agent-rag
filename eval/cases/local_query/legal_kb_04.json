@@ -1,0 +1,37 @@
+{
+  "source_file": "/hard_data1/user/yangguobin/LLM/Ai_legal_agent_team/data/legal_kb.txt",
+  "knowledge_summary": "The text outlines key legal principles in contract law, breach of contract, privacy law, intellectual property, and legal liability. It provides definitions, elements, examples, and remedies for each area.",
+  "analysis_type": "Local Query",
+  "user_query": "Define 'intellectual property' and list its main types.",
+  "must_cover_topics": [
+    "Intellectual Property",
+    "Types of IP"
+  ],
+  "must_cover_points": [
+    "creations of the mind",
+    "copyright",
+    "trademark",
+    "patent",
+    "trade secrets"
+  ],
+  "expected_evidence_terms": [
+    "intellectual property",
+    "refers to creations of the mind",
+    "main types include",
+    "copyright",
+    "trademark",
+    "patent",
+    "trade secrets"
+  ],
+  "recommended_followups": [
+    "How long does a patent typically last?",
+    "What distinguishes a trade secret from a patent?"
+  ],
+  "expected_structure": [
+    "Answer",
+    "Evidence from KB",
+    "Caveats",
+    "Follow-up questions"
+  ],
+  "evaluation_rubric": "Clearly defines intellectual property and correctly lists all main types."
+}
